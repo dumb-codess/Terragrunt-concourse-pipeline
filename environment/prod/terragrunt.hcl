@@ -4,13 +4,16 @@ include {
     path = find_in_parent_folders()
 }
 
-remote_state {
-  backend = "s3"
-  config = {
-    bucket         = "terraform-test-state1"
-    key            = "aws_key"
-    region         = "ap-south-1"
-    encrypt        = true
+
+terraform {
+  remote_state {
+    backend = "s3"
+    config = {
+      bucket         = "terraform-test-state1"
+      key            = "aws_key"
+      region         = "ap-south-1"
+      encrypt        = true
+    }
   }
 }
 
@@ -20,5 +23,6 @@ terraform {
 
 inputs = {
     instance_name = "Prod-TestInstance"
+    bucket_name=
 }
 
