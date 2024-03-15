@@ -8,11 +8,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "your-bucket-name"
-    key            = "path/to/your/state-file.tfstate" # Replace with your chosen state file key
-    region         = "your-aws-region"
+    bucket         = "terraform-test-state1"
+    key            = "aws_key" # Replace with your chosen state file key
+    region         = "ap-south-1"
     encrypt        = true
-    dynamodb_table = "your-lock-table-name"
   }
 }
-
