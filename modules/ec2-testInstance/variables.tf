@@ -3,7 +3,7 @@ variable "ami" {
 }
 
 variable "instance_type" {
-    description = "this is the type of instance"
+  description = "this is the type of instance"
 }
 
 variable "instance_name" {
@@ -14,6 +14,14 @@ variable "port1" {
   description = "this is the port for ingress"
 }
 
-variable "port2"{
+variable "port2" {
   description = "this is the port2 for ingress"
+}
+
+variable "bucket_name"{
+  description = "this is the Bucketname"
+}
+
+variable "region" {
+  description = "this the region"
 }
