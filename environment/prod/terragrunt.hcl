@@ -23,6 +23,6 @@ terraform {
 
 inputs = {
     instance_name = "Prod-TestInstance"
-    bucket_name=
+    bucket_name="terraform-test-state1"
 }
 
