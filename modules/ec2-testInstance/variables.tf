@@ -21,7 +21,3 @@ variable "port2" {
 variable "bucket_name"{
   description = "this is the Bucketname"
 }
-
-variable "region" {
-  description = "this the region"
-}
