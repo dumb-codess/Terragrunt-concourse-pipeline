@@ -2,7 +2,7 @@ resource "aws_instance" "TestInstance" {
   ami                    = var.ami
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.main.id]
-
+  count = 2
   tags = {
     Name = var.instance_name
   }

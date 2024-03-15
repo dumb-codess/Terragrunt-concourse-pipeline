@@ -1,0 +1,2 @@
+environment/prod/.terraform.lock.hcl
+environment/prod/.terragrunt-cache/
