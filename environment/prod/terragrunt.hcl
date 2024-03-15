@@ -18,13 +18,6 @@ terraform {
 }
 
 terraform {
-  extra_arguments "plan" {
-    commands = ["plan"]
-    arguments = ["-input=false", "-auto-approve"]
-  }
-}
-
-terraform {
     source = "../../modules/ec2-testInstance"
 }
 
